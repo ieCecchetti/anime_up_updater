@@ -2,11 +2,6 @@ import argparse
 from anime_up_updater.utils.logger import logger
 from anime_up_updater.functions import scraper
 import json
-import ptvsd
-
-
-ptvsd.enable_attach(address=('localhost', 5678))
-ptvsd.wait_for_attach()
 
 def store_in_db(db_conn_str, data):
     logger.info(
@@ -25,12 +20,20 @@ def main():
     print("Welcome to anime parser")
 
     parser = argparse.ArgumentParser(description='Description of your script')
-    parser.add_argument('--db_conn_str', type=str,
+    parser.add_argument('--db-conn-str', type=str,
                         help='Path to the db where to store the data')
     parser.add_argument('--output-file', type=str,
                         help='Path to the output file to store the data')
+    parser.add_argument(
+        '--debug-mode', help='Enable debug mode', action='store_true')
+
     # Parse the arguments
     args = parser.parse_args()
+
+    if args.debug_mode:
+        import ptvsd
+        ptvsd.enable_attach(address=('localhost', 5678))
+        ptvsd.wait_for_attach()
 
     # Scrape content
     airing_anime = scraper.scrape_all()
