@@ -6,7 +6,16 @@ import os
 from pymongo import MongoClient
 
 
-def store_in_db(data, db_conn_str, database_name, collection_name="airing_anime"):
+def store_in_db(data, db_conn_str, database_name, collection_name):
+    """Store anime list in Mongo database. In case database_name and collection_name are not passed
+    The default one will be used: [database='anime_up'][collection=`airing_anime`]
+
+    Args:
+        data (_type_): airing anime dictionary
+        db_conn_str (_type_): connection string to connect the database
+        database_name (_type_): database name
+        collection_name (str, optional): collection name where to store data. 
+    """
     database_name = database_name if database_name else "anime_up"
     collection_name = collection_name if collection_name else "airing_anime"
     logger.info(
@@ -26,6 +35,13 @@ def store_in_db(data, db_conn_str, database_name, collection_name="airing_anime"
 
 
 def store_as_json(out_path, data):
+    """Store the data in a certain file specified in input
+
+    Args:
+        out_path (_type_): path to the file. The name of the file can be specified or not. In case its not then it 
+        will be setted by default as `airing_anime.json`
+        data (_type_): airing anime dictionary
+    """
     if ".json" not in out_path:
         out_path = os.path.join(
             out_path, "airing_anime.json")
