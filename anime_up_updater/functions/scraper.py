@@ -33,9 +33,10 @@ def scrape_all(force_download=False):
 
     if force_download or not already_download:
         has_next = True
-        page_num = 1
+        page_num = 0
         airing_anime = []
         while has_next:
+            print("Actual anime list: ", len(airing_anime))
             has_next, data_page = scrape_single_page(
                 w_start=week_start,
                 w_end=week_end,
@@ -47,7 +48,7 @@ def scrape_all(force_download=False):
         print("Storing for future usage")
         # Store the JSON response in the output file
         with open(stored_file_path, "w") as json_file:
-            json.dump(data_page, json_file, indent=4)
+            json.dump(airing_anime, json_file, indent=4)
     else:
         # Open the JSON file and load its contents into a variable
         with open(stored_file_path, "r") as json_file:
@@ -57,12 +58,11 @@ def scrape_all(force_download=False):
 
 
 def scrape_single_page(w_start, w_end, page):
-    logger.debug(f"Querying anime for start_date: {
-        timestamp_to_datetime(w_start)}")
-    logger.debug(f"Querying anime for end_date: {
-        timestamp_to_datetime(w_end)}")
+    logger.debug(
+        f"Querying anime for start_date: {timestamp_to_datetime(w_start)} -- {w_start}")
+    logger.debug(
+        f"Querying anime for end_date: {timestamp_to_datetime(w_end)} -- {w_end}")
     logger.debug(f"Querying page: {page}")
-    logger.debug(f"---------------------------------")
 
     # GraphQL query and variables
     graphql_variables = {
@@ -92,9 +92,12 @@ def scrape_single_page(w_start, w_end, page):
         response_json = response.json()
         has_next = response_json['data']['Page']['pageInfo']['hasNextPage']
         data_page = response_json['data']['Page']['airingSchedules']
+        logger.debug(f"Found: {len(data_page)} elements")
+
     else:
         # Print an error message if the request failed
         raise RuntimeError(f"Failed to fetch data: {response.status_code}")
+    logger.debug(f"---------------------------------")
     return has_next, data_page
 
 

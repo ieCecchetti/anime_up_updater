@@ -1,6 +1,7 @@
 import argparse
 from anime_up_updater.utils.logger import logger
 from anime_up_updater.functions import scraper
+from anime_up_updater.functions.filter import process
 import json
 import os
 from pymongo import MongoClient
@@ -76,6 +77,7 @@ def main():
 
     # Scrape content
     airing_anime = scraper.scrape_all()
+    airing_anime = process(airing_anime)
 
     # Check which options are selected
     if args.db_conn_str:

@@ -1,0 +1,165 @@
+{
+        "id": 374969,
+        "episode": 6,
+        "airingAt": 1715349600,
+        "media": {
+            "id": 156822,
+            "idMal": 53580,
+            "title": {
+                "romaji": "Tensei Shitara Slime Datta Ken 3rd Season",
+                "native": "\u8ee2\u751f\u3057\u305f\u3089\u30b9\u30e9\u30a4\u30e0\u3060\u3063\u305f\u4ef6 \u7b2c3\u671f",
+                "english": "That Time I Got Reincarnated as a Slime Season 3"
+            },
+            "startDate": {
+                "year": 2024,
+                "month": 4,
+                "day": 5
+            },
+            "endDate": {
+                "year": null,
+                "month": null,
+                "day": null
+            },
+            "status": "RELEASING",
+            "season": "SPRING",
+            "format": "TV",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Comedy",
+                "Fantasy"
+            ],
+            "synonyms": [
+                "Tensura 3",
+                "\u0e40\u0e01\u0e34\u0e14\u0e43\u0e2b\u0e21\u0e48\u0e17\u0e31\u0e49\u0e07\u0e17\u0e35\u0e01\u0e47\u0e40\u0e1b\u0e47\u0e19\u0e2a\u0e44\u0e25\u0e21\u0e4c\u0e44\u0e1b\u0e0b\u0e30\u0e41\u0e25\u0e49\u0e27 \u0e20\u0e32\u0e04 3",
+                "Moi, quand je me r\u00e9incarne en Slime Saison 3"
+            ],
+            "duration": 24,
+            "popularity": 76753,
+            "episodes": 24,
+            "source": "LIGHT_NOVEL",
+            "countryOfOrigin": "JP",
+            "hashtag": "#\u8ee2\u30b9\u30e9 #tensura",
+            "averageScore": 80,
+            "siteUrl": "https://anilist.co/anime/156822",
+            "description": "The third season of <i>Tensei Shitara Slime Datta Ken</i>.<br><br>\nRimuru has officially become a Demon Lord after defeating Clayman. Following Walpurgis, the Demon Lords' banquet, Rimuru's domain is expanded to include the entire Great Forest of Jura. Anticipating a flood of representatives from all races showing up to pay their respects, Rimuru decides to throw a festival to commemorate the opening of Tempest, using it as an opportunity to gain new citizens and present Demon Lord Rimuru to the world. Meanwhile, in the Holy Empire of Lubelius, home base of the monster-hating cult of Luminism, Holy Knight Captain Hinata receives a message from Rimuru. But the message is actually a fabricated declaration of war sent by some unknown party. Upon learning that Hinata is heading for Tempest, Rimuru makes a decision... Thus begins a new challenge for Rimuru, striving to distinguish friend from foe in his pursuit of the ideal nation where humans and monsters can prosper together. <br><br>\n(Source: Crunchyroll)\n",
+            "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/156822-y0wPQIl3AHDA.jpg",
+            "isAdult": false,
+            "coverImage": {
+                "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156822-Jzo2ITWgm4kM.jpg",
+                "color": "#e4785d"
+            },
+            "trailer": {
+                "id": "gqrkjNpoeQM",
+                "site": "youtube",
+                "thumbnail": "https://i.ytimg.com/vi/gqrkjNpoeQM/hqdefault.jpg"
+            },
+            "externalLinks": [
+                {
+                    "site": "Official Site",
+                    "url": "https://www.ten-sura.com/anime/tensura"
+                },
+                {
+                    "site": "Twitter",
+                    "url": "https://twitter.com/ten_sura_anime"
+                },
+                {
+                    "site": "Crunchyroll",
+                    "url": "https://www.crunchyroll.com/series/GYZJ43JMR/that-time-i-got-reincarnated-as-a-slime"
+                },
+                {
+                    "site": "Bilibili TV",
+                    "url": "https://www.bilibili.tv/en/media/2104310"
+                },
+                {
+                    "site": "iQ",
+                    "url": "https://www.iq.com/album/z2kgzxx3xl"
+                },
+                {
+                    "site": "YouTube",
+                    "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0TccWcuNXEUCq0R6KBWYFW"
+                }
+            ],
+            "rankings": [
+                {
+                    "rank": 230,
+                    "type": "RATED",
+                    "season": null,
+                    "allTime": true
+                },
+                {
+                    "rank": 9,
+                    "type": "RATED",
+                    "season": null,
+                    "allTime": false
+                },
+                {
+                    "rank": 8,
+                    "type": "POPULAR",
+                    "season": null,
+                    "allTime": false
+                },
+                {
+                    "rank": 5,
+                    "type": "RATED",
+                    "season": "SPRING",
+                    "allTime": false
+                },
+                {
+                    "rank": 4,
+                    "type": "POPULAR",
+                    "season": "SPRING",
+                    "allTime": false
+                }
+            ],
+            "studios": {
+                "nodes": [
+                    {
+                        "id": 4418,
+                        "name": "8-bit",
+                        "siteUrl": "https://anilist.co/studio/4418"
+                    }
+                ]
+            },
+            "relations": {
+                "edges": [
+                    {
+                        "relationType": "SOURCE",
+                        "node": {
+                            "id": 86355,
+                            "title": {
+                                "romaji": "Tensei Shitara Slime Datta Ken",
+                                "native": "\u8ee2\u751f\u3057\u305f\u3089\u30b9\u30e9\u30a4\u30e0\u3060\u3063\u305f\u4ef6",
+                                "english": "That Time I Got Reincarnated as a Slime"
+                            },
+                            "siteUrl": "https://anilist.co/manga/86355"
+                        }
+                    },
+                    {
+                        "relationType": "SOURCE",
+                        "node": {
+                            "id": 86399,
+                            "title": {
+                                "romaji": "Tensei Shitara Slime Datta Ken",
+                                "native": "\u8ee2\u751f\u3057\u305f\u3089\u30b9\u30e9\u30a4\u30e0\u3060\u3063\u305f\u4ef6",
+                                "english": "That Time I Got Reincarnated as a Slime"
+                            },
+                            "siteUrl": "https://anilist.co/manga/86399"
+                        }
+                    },
+                    {
+                        "relationType": "PREQUEL",
+                        "node": {
+                            "id": 116742,
+                            "title": {
+                                "romaji": "Tensei Shitara Slime Datta Ken 2nd Season Part 2",
+                                "native": "\u8ee2\u751f\u3057\u305f\u3089\u30b9\u30e9\u30a4\u30e0\u3060\u3063\u305f\u4ef6 \u7b2c2\u671f \u7b2c2\u30af\u30fc\u30eb",
+                                "english": "That Time I Got Reincarnated as a Slime Season 2 Part 2"
+                            },
+                            "siteUrl": "https://anilist.co/anime/116742"
+                        }
+                    }
+                ]
+            }
+        }
+    }
