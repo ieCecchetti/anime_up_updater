@@ -29,7 +29,8 @@ def process(airing_anime):
         "episode": "8",
         "rating": 4.9,
         "follower": 72200
-        ...
+        "website_url": ...,
+        "cruncyrol_url": ...
     }
     """
     tv_anime_list = []

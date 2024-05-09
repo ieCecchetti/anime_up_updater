@@ -65,6 +65,8 @@ def main():
     parser.add_argument('--output-file', type=str,
                         help='Path to the output file to store the data')
     parser.add_argument(
+        '--filter-result', help='Custom filter data (with model:Anime class)')
+    parser.add_argument(
         '--debug-mode', help='Enable debug mode', action='store_true')
 
     # Parse the arguments
@@ -77,7 +79,10 @@ def main():
 
     # Scrape content
     airing_anime = scraper.scrape_all()
-    airing_anime = process(airing_anime)
+
+    if args.filter_result:
+        print("[v] Filter for results is enabled..")
+        airing_anime = process(airing_anime)
 
     # Check which options are selected
     if args.db_conn_str:
